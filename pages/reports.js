@@ -1,6 +1,7 @@
 // pages/reports.js
 import { useState, useEffect } from "react";
 import Head from "next/head";
+import dynamic from "next/dynamic";
 
 // Libs
 import { db } from "@/lib/db";
@@ -16,9 +17,6 @@ import {
     ResponsiveContainer,
     Tooltip,
 } from "recharts";
-import jsPDF from "jspdf";
-import html2canvas from "html2canvas";
-import { toPng } from "html-to-image";
 
 // Components
 import RecordListElement from '@/components/recordListElement/recordListElement';
@@ -223,11 +221,17 @@ export default function Reports() {
 
 
     async function handleExportPDF() {
+
         try {
             setExporting(true);
 
+            const jsPDF = (await import("jspdf")).default;
+            const html2canvas = (await import("html2canvas")).default;
+            const { toPng } = await import("html-to-image");
+
+
             const element = document.getElementById("report-export");
-            
+
 
             // 1. Trouver le radar chart (SVG)
             const radarSvg = element.querySelector(".recharts-surface");
