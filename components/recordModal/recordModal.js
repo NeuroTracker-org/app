@@ -391,7 +391,7 @@ const RecordModal = ({ isOpen, hide }) => {
                       </div>
                     </div>
                   </div>
-                  {errorIntensity && <p>L'intensité doit être définie</p>}
+                  {errorIntensity && <p>L’intensité doit être définie</p>}
                 </fieldset>
 
                 {/* --- Médicaments --- */}
