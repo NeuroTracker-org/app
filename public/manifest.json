@@ -1,0 +1,28 @@
+{
+  "name": "NeuroTracker",
+  "short_name": "NeuroTracker",
+  "description": "Prendre ses maux de tête en main avec NeuroTracker.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#101319",
+  "theme_color": "#101319",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/maskable-icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

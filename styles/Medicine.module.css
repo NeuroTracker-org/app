@@ -1,0 +1,73 @@
+.medicineMain {
+    width: fit-content;
+    margin: 0 auto;
+    h1 {
+        font-size: 3rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 16px;
+
+        i {
+            font-size: 0.825em;
+            padding-bottom: 2px;
+            color: var(--accent);
+        }
+    }
+
+    .medicineDescription {
+        margin-bottom: 24px;
+    }
+
+    .medicineSearch {
+        margin-bottom: 24px;
+    }
+ 
+    .drugItem {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 360px;
+        background: var(--background-grey);
+        padding: 0.5rem;
+        border-radius: 4px;
+        gap: 0.5rem;
+        margin-top: .5rem;
+
+        .drugText {
+            padding: 4px 8px;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            transition: border-color 0.2s;
+            width: calc(100% - 72px - 0.5rem);
+
+            &.editing {
+                border-color: var(--muted);
+                background-color: var(--grey);
+                color: var(--muted);
+            }
+        }
+
+        .buttonGroup {
+            display: flex;
+            gap: 0.5rem;
+            width: 72px;
+
+            button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 32px;
+                height: 32px;
+                font-size: 0.825rem;
+                border: none;
+                border: 1px solid var(--grey);
+                border-radius: 4px;
+
+                &:hover {
+                    background-color: var(--grey);
+                }
+            }
+        }
+    }
+}

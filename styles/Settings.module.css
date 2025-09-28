@@ -1,0 +1,204 @@
+.settingsMain {
+    max-width: 860px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.header h1 {
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 16px;
+
+    i {
+        font-size: 0.825em;
+        padding-bottom: 2px;
+        color: var(--accent);
+    }
+}
+
+.header p {
+    margin: 0 0 16px;
+    color: var(--text-muted, #6b7280);
+}
+
+.card,
+.cardDanger {
+    background: var(--background-grey);
+    border: 1px solid var(--grey);
+    border-radius: 12px;
+    padding: 16px;
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+.helpText {
+    color: var(--muted);
+    margin: .5rem 0;
+    max-width: 420px;
+}
+
+.syncRow {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.syncInput {
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid var(--grey);
+
+    &:focus {
+        border-color: var(--muted);
+    }
+}
+
+.syncActions {
+    display: flex;
+    gap: 8px;
+}
+
+.actionsRow {
+    display: flex;
+    gap: 8px;
+}
+
+.dangerBtn {
+    border-color: #ef4444;
+    color: #ef4444;
+}
+
+.modalBackdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, .35);
+    display: grid;
+    place-items: center;
+    z-index: 1000;
+}
+
+.modal {
+    background: var(--accent-alpha);
+    border: 1px solid var(--accent);
+    border-radius: 14px;
+    padding: 18px 24px;
+    width: min(520px, 92vw);
+    backdrop-filter: blur(12px);
+}
+
+.modal h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.modal p {
+    margin: 0 0 16px;
+}
+
+.modalActions {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+
+    button {
+        transition: all 0.16s ease-in-out;
+
+        &:first-of-type {
+            color: var(--foreground);
+            background-color: transparent;
+            border-color: var(--muted);
+
+            &:hover {
+                background-color: var(--muted);
+            }
+        }
+
+        &:last-of-type {
+            background-color: var(--accent-alpha);
+            border-color: var(--accent);
+            color: var(--foreground);
+
+            &:hover {
+                background-color: var(--accent);
+                color: var(--foreground);
+            }
+        }
+    }
+}
+
+.actionsRow {
+    button {
+        i {
+            margin-right: 4px;
+        }
+    }
+}
+
+.syncCard {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+
+    @media screen and (max-width: 940px) {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+.qrCode {
+    border: 1px solid var(--grey);
+    border-radius: 12px;
+    padding: 24px;
+    background: var(--foreground);
+}
+
+.qrWrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+
+    .codeWrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        code {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            background: var(--background-grey);
+            border: 1px solid var(--grey);
+            font-size: 2rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+
+            button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+            }
+        }
+
+        span {
+            color: var(--muted);
+        }
+    }
+
+    @media screen and (max-width: 940px) {
+        flex-direction: column;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,189 @@
+.frontZonesContainer {
+    display: block;
+}
+
+#FrontZones {
+    position: relative;
+    height: 470px;
+}
+
+
+
+
+.cls1 {
+    stroke-dasharray: 2 2;
+}
+
+.cls1,
+.cls2,
+.cls3,
+.cls4,
+.cls5,
+.cls6,
+.cls7,
+.cls8,
+.cls9,
+.cls10,
+.cls11,
+.cls12,
+.cls13,
+.cls14,
+.cls15,
+.cls16,
+.cls17,
+.cls18 {
+    fill: none;
+}
+
+.cls1,
+.cls3,
+.cls4,
+.cls5,
+.cls6,
+.cls7,
+.cls8,
+.cls9,
+.cls10,
+.cls11,
+.cls12,
+.cls13,
+.cls14,
+.cls15,
+.cls16,
+.cls17,
+.cls18 {
+    stroke-miterlimit: 10;
+}
+
+.cls1,
+.cls3,
+.cls4,
+.cls5,
+.cls6,
+.cls7,
+.cls8,
+.cls9,
+.cls10,
+.cls11,
+.cls12,
+.cls14,
+.cls15,
+.cls16,
+.cls17,
+.cls18 {
+    stroke: var(--grey);
+}
+
+.cls2 {
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.cls2,
+.cls13 {
+    stroke: var(--grey);
+    stroke-width: 2px;
+}
+
+.cls3 {
+    stroke-dasharray: 2 2;
+}
+
+.cls4 {
+    stroke-dasharray: 2 2;
+}
+
+.cls5 {
+    stroke-dasharray: 2 2;
+}
+
+.cls7 {
+    stroke-dasharray: 2 2;
+}
+
+.cls8 {
+    stroke-dasharray: 2 2;
+}
+
+.cls9 {
+    stroke-dasharray: 2 2;
+}
+
+.cls10 {
+    stroke-dasharray: 2 2;
+}
+
+.cls11 {
+    stroke-dasharray: 2.01 2.01;
+}
+
+.cls12 {
+    stroke-dasharray: 1.95 1.95;
+}
+
+.eyebrows {
+    pointer-events: none;
+}
+
+.cls19 {
+    fill: var(--background);
+}
+
+.cls20 {
+    fill: url(#neckgradient);
+}
+
+.cls14 {
+    stroke-dasharray: 1.95 1.95;
+}
+
+.cls21 {
+    fill: transparent;
+    transition: fill 0.2s ease, filter 0.2s ease;
+
+    &:hover {
+        fill: var(--accent-alpha);
+        cursor: pointer;
+    }
+
+    &.selected {
+        fill: var(--accent);
+        filter: drop-shadow(0 0 8px var(--accent));
+    }
+}
+
+.cls15 {
+    stroke-dasharray: 1.98 1.98;
+}
+
+.cls22 {
+    fill: var(--background-grey);
+}
+
+.cls16 {
+    stroke-dasharray: 2 2;
+}
+
+.cls17 {
+    stroke-dasharray: 2 2;
+}
+
+.cls18 {
+    stroke-dasharray: 2 2;
+}
+
+
+.tooltip {
+    position: fixed;
+    text-align: center;
+    z-index: 999;
+    pointer-events: none;
+    padding: 16px;
+    background-color: rgba(16, 19, 25, 0.6);
+    backdrop-filter: blur(4px);
+    color: var(--foreground);
+    font-weight: 700;
+    transform: translateX(-50%) translateY(30px);
+    font-size: 0.825rem;
+    border-radius: 8px;
+}

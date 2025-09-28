@@ -1,0 +1,119 @@
+.recordItem {
+  display: block;
+  padding: 1rem 1.5rem;
+  border-radius: 4px;
+  background-color: var(--background-grey);
+  border: 1px solid var(--grey);
+  text-decoration: none;
+  color: inherit;
+
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+  }
+
+  .zonesContainer {
+    display: flex;
+    align-items: center;
+
+    h4 {
+      margin-right: 0.5rem;
+    }
+
+  }
+
+  .zonesList {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+
+    li {
+      padding: 8px 12px;
+      border-radius: 50px;
+      background-color: rgba(0, 0, 0, 0.2);
+      font-size: 0.825rem;
+    }
+  }
+
+  .intensitySection {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+  }
+
+  .intensityBar {
+    flex: 1;
+    width: 100%;
+    height: 20px;
+    background-color: var(--grey);
+    border-radius: 4px;
+    position: relative;
+
+    .intensityFill {
+      display: block;
+      position: absolute;
+      border-radius: 4px;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      height: 100%;
+
+      .intensityValue {
+        position: absolute;
+        right: 8px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 0.75rem;
+        color: white;
+        text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
+      }
+    }
+  }
+
+  .titleSection {
+    >* {
+      display: inline-block;
+      vertical-align: middle;
+
+      &:first-of-type {
+        margin-right: .5rem;
+      }
+    }
+  }
+
+  .dateTimes {
+    font-size: 1rem;
+    color: var(--grey-dark);
+
+    i {
+      font-size: 0.6rem;
+    }
+
+    >* {
+      display: inline-block;
+      vertical-align: middle;
+
+      &:first-of-type {
+        margin-right: .5rem;
+      }
+    }
+  }
+
+  .duration {
+    >* {
+      display: inline-block;
+      vertical-align: middle;
+
+      &:first-of-type {
+        margin-right: .5rem;
+      }
+    }
+  }
+
+}

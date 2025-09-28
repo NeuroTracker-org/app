@@ -1,0 +1,325 @@
+[
+  {
+    "molecule": "Agomelatine",
+    "brands": [
+      "Valdoxan"
+    ]
+  },
+  {
+    "molecule": "Almotriptan",
+    "brands": [
+      "Almogran"
+    ]
+  },
+  {
+    "molecule": "Amitriptyline",
+    "brands": [
+      "Elavil",
+      "Laroxyl"
+    ]
+  },
+  {
+    "molecule": "Aspirine",
+    "brands": [
+      "Alka-Seltzer",
+      "Aspro",
+      "Aspirine",
+      "Aspégic",
+      "Aspisol",
+      "Kardegic"
+    ]
+  },
+  {
+    "molecule": "Atogépant",
+    "brands": [
+      "AQUIPTA"
+    ]
+  },
+  {
+    "molecule": "Aténolol",
+    "brands": [
+      "Tenormin"
+    ]
+  },
+  {
+    "molecule": "Bisoprolol",
+    "brands": [
+      "Cardiocor"
+    ]
+  },
+  {
+    "molecule": "Candésartan",
+    "brands": [
+      "Atacand"
+    ]
+  },
+  {
+    "molecule": "Diclofénac",
+    "brands": [
+      "Cataflam",
+      "Voltarène"
+    ]
+  },
+  {
+    "molecule": "Dihydroergotamine",
+    "brands": [
+      "Migranal",
+      "D.H.E. 45"
+    ]
+  },
+  {
+    "molecule": "Doxépine",
+    "brands": [
+      "Sinequan"
+    ]
+  },
+  {
+    "molecule": "Eptinezumab",
+    "brands": [
+      "Vyepti"
+    ]
+  },
+  {
+    "molecule": "Excedryn (association)",
+    "brands": [
+      "Excedryn Migraine"
+    ]
+  },
+  {
+    "molecule": "Flunarizine",
+    "brands": [
+      "Sibelium"
+    ]
+  },
+  {
+    "molecule": "Frovatriptan",
+    "brands": [
+      "Frova"
+    ]
+  },
+  {
+    "molecule": "Frémanézumab",
+    "brands": [
+      "Ajovy"
+    ]
+  },
+  {
+    "molecule": "Galcanézumab",
+    "brands": [
+      "Emgality"
+    ]
+  },
+  {
+    "molecule": "Halopéridol",
+    "brands": [
+      "Haldol"
+    ]
+  },
+  {
+    "molecule": "Ibuprofène",
+    "brands": [
+      "Nurofen",
+      "Advil"
+    ]
+  },
+  {
+    "molecule": "Imipramine",
+    "brands": [
+      "Tofranil"
+    ]
+  },
+  {
+    "molecule": "Kétoprofène",
+    "brands": [
+      "Ketum",
+      "Profenid"
+    ]
+  },
+  {
+    "molecule": "Lasmiditan",
+    "brands": [
+      "Reyvow"
+    ]
+  },
+  {
+    "molecule": "Lisinopril",
+    "brands": [
+      "Lisnopril",
+      "Zestril"
+    ]
+  },
+  {
+    "molecule": "Magnésium",
+    "brands": [
+      "Magnésium marin",
+      "Mag-2"
+    ]
+  },
+  {
+    "molecule": "Métoclopramide",
+    "brands": [
+      "Primpéran"
+    ]
+  },
+  {
+    "molecule": "Métoprolol",
+    "brands": [
+      "Lopressor",
+      "Betaloc"
+    ]
+  },
+  {
+    "molecule": "Naproxène",
+    "brands": [
+      "Aleve",
+      "Naprosyn"
+    ]
+  },
+  {
+    "molecule": "Naratriptan",
+    "brands": [
+      "Naramig"
+    ]
+  },
+  {
+    "molecule": "Nortriptyline",
+    "brands": [
+      "Pamelor",
+      "Nortrilen"
+    ]
+  },
+  {
+    "molecule": "OnabotulinumtoxinA",
+    "brands": [
+      "Botox"
+    ]
+  },
+  {
+    "molecule": "Paracétamol",
+    "brands": [
+      "Paralyoc",
+      "Claradol",
+      "Sapramol",
+      "Doliprane",
+      "Tylenol",
+      "Dafalgan",
+      "Efferalgan"
+    ]
+  },
+  {
+    "molecule": "Paracétamol+caféine",
+    "brands": [
+      "Excedryn Migraine"
+    ]
+  },
+  {
+    "molecule": "Prednisone",
+    "brands": [
+      "Prednisone Teva",
+      "Deltasone"
+    ]
+  },
+  {
+    "molecule": "Propranolol",
+    "brands": [
+      "Inderal"
+    ]
+  },
+  {
+    "molecule": "Riboflavine (vitamine B2)",
+    "brands": [
+      "Cefaly"
+    ]
+  },
+  {
+    "molecule": "Rimegepant",
+    "brands": [
+      "VYDURA"
+    ]
+  },
+  {
+    "molecule": "Rizatriptan",
+    "brands": [
+      "Maxalt",
+      "Rizact"
+    ]
+  },
+  {
+    "molecule": "Sumatriptan",
+    "brands": [
+      "Sumax",
+      "Imigran"
+    ]
+  },
+  {
+    "molecule": "Timolol",
+    "brands": [
+      "Timoptic"
+    ]
+  },
+  {
+    "molecule": "Topiramate",
+    "brands": [
+      "Topamax",
+      "Topiramate EG"
+    ]
+  },
+  {
+    "molecule": "Ubrogepant",
+    "brands": [
+      "Ubrelvy"
+    ]
+  },
+  {
+    "molecule": "Valproate",
+    "brands": [
+      "Depakine"
+    ]
+  },
+  {
+    "molecule": "Valproate de sodium",
+    "brands": [
+      "Depakote",
+      "Dépakine",
+      "Depakine"
+    ]
+  },
+  {
+    "molecule": "Venlafaxine",
+    "brands": [
+      "Effexor"
+    ]
+  },
+  {
+    "molecule": "Vérapamil",
+    "brands": [
+      "Isoptine",
+      "Verelan"
+    ]
+  },
+  {
+    "molecule": "Zolmitriptan",
+    "brands": [
+      "Zomig"
+    ]
+  },
+  {
+    "molecule": "Élétriptan",
+    "brands": [
+      "Relpax"
+    ]
+  },
+  {
+    "molecule": "Érénumab",
+    "brands": [
+      "Aimovig"
+    ]
+  },
+  {
+    "molecule": "Œstrogènes",
+    "brands": [
+      "Oestrodose",
+      "Estreva"
+    ]
+  }
+]

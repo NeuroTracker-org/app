@@ -1,0 +1,64 @@
+.fieldLabel {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 1px;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  cursor: pointer;
+  transition: all 0.16s ease-in-out;
+  width: 40px;
+  text-align: right;
+}
+
+.inputContainer {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  padding: 8px 12px;
+  border: 1px solid var(--grey);
+  border-radius: 6px;
+  transition: all 0.16s ease-in-out;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.icon {
+  font-size: 0.825rem;
+}
+
+.label {
+  font-weight: 500;
+}
+
+.hiddenInput {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  &:hover {
+    .fieldLabel {
+      color: var(--link);
+    }
+
+    .inputContainer {
+      color: var(--link);
+      border-color: var(--link);
+      background-color: var(--primary-alpha);
+    }
+  }
+}

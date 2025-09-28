@@ -1,0 +1,22 @@
+.recordsMain {
+    h1 {
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    .noRecords {
+        text-align: center;
+        font-size: 1.5rem;
+        color: var(--muted);
+    }
+    .recordsList {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        flex-wrap: wrap;
+        gap: 1rem;
+
+        @media screen and (max-width: 940px) {
+            flex-direction: column;
+        }
+    }
+}

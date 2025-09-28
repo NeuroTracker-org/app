@@ -1,0 +1,81 @@
+#BackZones {
+    height: 470px;
+    position: relative;
+}
+
+
+
+.cls1 {
+    stroke-dasharray: 2 2;
+}
+
+.cls1,
+.cls2,
+.cls3,
+.cls4,
+.cls5 {
+    fill: none;
+    stroke-miterlimit: 10;
+}
+
+.cls1,
+.cls2,
+.cls3,
+.cls5 {
+    stroke: var(--grey);
+}
+
+.cls3 {
+    stroke-dasharray: 2 2;
+}
+
+.cls4 {
+    stroke: var(--grey);
+    stroke-width: 2px;
+}
+
+.cls6 {
+    fill: transparent;
+}
+
+.cls7 {
+    fill: var(--background-grey);
+}
+
+.cls5 {
+    stroke-dasharray: 2 2;
+}
+
+
+#selectables {
+    path {
+        fill: transparent;
+        transition: fill 0.2s ease, filter 0.2s ease;
+        cursor: pointer;
+
+        &:hover {
+            fill: var(--accent-alpha);
+        }
+
+        &.selected {
+            fill: var(--accent);
+            filter: drop-shadow(0 0 8px var(--accent));
+        }
+    }
+}
+
+
+.tooltip {
+    position: fixed;
+    text-align: center;
+    z-index: 999;
+    pointer-events: none;
+    padding: 16px;
+    background-color: rgba(16, 19, 25, 0.6);
+    backdrop-filter: blur(4px);
+    color: var(--foreground);
+    font-weight: 700;
+    transform: translateX(-50%) translateY(30px);
+    font-size: 0.825rem;
+    border-radius: 8px;
+}

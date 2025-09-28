@@ -1,0 +1,68 @@
+{
+  "records": [
+    {
+      "startTime": "2025-09-25T08:00",
+      "isRecording": false,
+      "id": 17,
+      "stopTime": "2025-09-25T17:30",
+      "duration": 61200000,
+      "intensity": 75,
+      "infos": "RAS",
+      "drugs": [
+        {
+          "num": 1,
+          "drug": 1,
+          "name": "Zolmitriptan"
+        }
+      ],
+      "zones": [
+        "Frontale gauche",
+        "Oculaire gauche",
+        "Maxillaire gauche",
+        "Temporal gauche",
+        "Cervicale gauche",
+        "Cervicale droite"
+      ]
+    },
+    {
+      "startTime": "2025-09-24T20:00",
+      "isRecording": false,
+      "id": 21,
+      "stopTime": "2025-09-25T01:21",
+      "duration": 17460000,
+      "intensity": 10,
+      "infos": "",
+      "drugs": [
+        {
+          "num": 1,
+          "drug": 1,
+          "name": "Zolmitriptan"
+        }
+      ],
+      "zones": [
+        "Frontale droite",
+        "Frontale gauche",
+        "Cervicale gauche",
+        "Cervicale droite"
+      ]
+    }
+  ],
+  "drugs": [
+    {
+      "molecule": "Zolmitriptan",
+      "brands": [
+        "Zomig"
+      ],
+      "id": 1
+    }
+  ],
+  "meta": [
+    {
+      "key": "recordingState",
+      "isRecording": false,
+      "startTime": ""
+    }
+  ],
+  "exportedAt": "2025-09-26T18:54:16.891Z",
+  "expiresAt": 1758916457887
+}

@@ -1,0 +1,125 @@
+.recordButton {
+    position: relative;
+    bottom: 16px;
+    left: 50%;
+    width: 100%;
+    max-width: 400px;
+    height: 70px;
+    border-radius: 50px;
+    background: rgba(16, 19, 25, 0.6);
+    border: 1px solid var(--grey);
+    backdrop-filter: blur(8px);
+    transform: translateX(-50%);
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    gap: 1rem;
+    padding: 0 2rem;
+
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+
+        li {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            cursor: pointer;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+
+            &.active {
+                background-color: var(--background-grey);
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    button {
+        background-color: var(--background);
+        box-shadow: 0 0 0 0 var(--accent);
+        border: 2px solid var(--accent);
+        color: var(--accent);
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.4rem;
+        text-shadow: 0 0 30px var(--accent);
+        transition: all 0.16s ease-in-out;
+        position: relative;
+
+        &:hover {
+            color: var(--foreground);
+            box-shadow: 0 0 10px 0px var(--accent);
+            background-color: var(--accent);
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            top: -2px;
+            left: -2px;
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+            border-radius: 50%;
+            background-color: var(--accent);
+            opacity: 0;
+        }
+
+        &.isRecording {
+            font-size: 1.2rem;
+
+            &:after {
+                animation: ripple 1s infinite ease-in-out;
+            }
+        }
+    }
+
+    span {
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 700;
+    }
+
+
+    @media screen and (max-width: 900px) {
+        max-width: 100%;
+        border-radius: 0;
+        bottom: 0;
+        padding: 0;
+        gap: 2rem;
+        background-color: var(--background);
+        border: none;
+        border-top: 1px solid var(--grey);
+        ul {
+            gap: 2rem;
+        }
+    }
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.4);
+        opacity: 0;
+    }
+}
