@@ -24,7 +24,7 @@ export default function Home() {
 
       <main className={styles.homePage}>
         <h1><img src="/wordmark.svg" alt="NeuroTracker Logo wordmark" /> vous aide à mieux connaître vos migraines et céphalées.</h1>
-        <p>Il ne vous reste plus qu'à prendre vos maux de tête en main !</p>
+        <p>Il ne vous reste plus qu’à prendre vos maux de tête en main !</p>
         <ul>
           <li className={styles.mainItem}>
             <i className="fas fa-bolt"></i>
@@ -57,7 +57,7 @@ export default function Home() {
           <li>
             <Link href="/help">
               <i className="far fa-arrow-right"></i>
-              Aide contextuelle pour vous guider dans l'utilisation de l'application
+              Aide contextuelle pour vous guider dans l’utilisation de l’application
             </Link>
           </li>
           <li>
@@ -70,7 +70,7 @@ export default function Home() {
           <li>
             <Link href="/help">
               <i className="far fa-arrow-right"></i>
-              Aide contextuelle pour vous guider dans l'utilisation de l'application
+              Aide contextuelle pour vous guider dans l’utilisation de l’application
             </Link>
           </li>
         </ul>
