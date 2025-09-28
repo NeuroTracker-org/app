@@ -41,6 +41,11 @@
             }
         }
     }
+
+    @media screen and (max-width: 1024px) {
+        flex-direction: column-reverse;
+        gap: .5rem;
+    }
 }
 
 .breadcrumbs {
@@ -72,6 +77,7 @@
     small {
         color: var(--muted);
     }
+
 }
 
 
@@ -360,6 +366,10 @@ label input.intensityRadio:checked {
 
 .zonesWrap {
     margin: 2rem 0 4rem 0;
+
+    @media screen and (max-width: 1024px) {
+        margin: 1rem 0 1rem 0;
+    }
 }
 
 .formFooter {

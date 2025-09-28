@@ -19,7 +19,7 @@
             margin-bottom: 5rem;
         }
 
-        > h3 {
+        >h3 {
             margin-bottom: 1rem;
         }
     }
@@ -69,6 +69,10 @@
                 height: 3rem;
                 width: auto;
                 margin-right: 1rem;
+            }
+
+            @media screen and (max-width: 1024px) {
+                font-size: 2rem;
             }
         }
     }

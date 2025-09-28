@@ -18,6 +18,10 @@
         padding-bottom: 2px;
         color: var(--accent);
     }
+
+    @media screen and (max-width: 1024px) {
+        font-size: 2rem;
+    }
 }
 
 .header p {
@@ -146,12 +150,6 @@
     flex-wrap: wrap;
     align-items: center;
     gap: 2rem;
-
-    @media screen and (max-width: 940px) {
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-    }
 }
 
 .qrCode {
@@ -197,7 +195,7 @@
         }
     }
 
-    @media screen and (max-width: 940px) {
+    @media screen and (max-width: 1024px) {
         flex-direction: column;
         justify-content: center;
     }

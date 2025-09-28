@@ -2,12 +2,18 @@
     h1 {
         margin-bottom: 2rem;
         text-align: center;
+
+        @media screen and (max-width: 1024px) {
+            font-size: 2rem;
+        }
     }
+
     .noRecords {
         text-align: center;
         font-size: 1.5rem;
         color: var(--muted);
     }
+
     .recordsList {
         display: flex;
         justify-content: center;
@@ -15,7 +21,7 @@
         flex-wrap: wrap;
         gap: 1rem;
 
-        @media screen and (max-width: 940px) {
+        @media screen and (max-width: 1024px) {
             flex-direction: column;
         }
     }

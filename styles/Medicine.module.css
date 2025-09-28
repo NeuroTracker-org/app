@@ -1,6 +1,7 @@
 .medicineMain {
     width: fit-content;
     margin: 0 auto;
+
     h1 {
         font-size: 3rem;
         display: flex;
@@ -13,6 +14,10 @@
             padding-bottom: 2px;
             color: var(--accent);
         }
+
+        @media screen and (max-width: 1024px) {
+            font-size: 2rem;
+        }
     }
 
     .medicineDescription {
@@ -22,7 +27,7 @@
     .medicineSearch {
         margin-bottom: 24px;
     }
- 
+
     .drugItem {
         display: flex;
         align-items: center;

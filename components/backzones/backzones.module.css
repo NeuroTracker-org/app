@@ -1,6 +1,10 @@
 #BackZones {
     height: 470px;
     position: relative;
+
+    @media screen and (max-width: 1024px) {
+        height: auto;
+    }
 }
 
 

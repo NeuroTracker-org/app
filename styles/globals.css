@@ -535,7 +535,7 @@ body {
 .inputFileWrap {
   position: relative;
   cursor: pointer;
-  width: 143px;
+  width: 150px;
 
   input {
     position: absolute;

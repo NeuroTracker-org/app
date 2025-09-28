@@ -296,7 +296,7 @@ export default function Settings() {
                   <code>
                     {syncCode}
                     <button className="cta" onClick={copySyncCode} disabled={busy}>
-                      <i className="far fa-copy"></i>
+                      <i className="fas fa-copy"></i>
                     </button>
                   </code>
                   <span>Temps restant : {remaining}</span>
@@ -340,7 +340,7 @@ export default function Settings() {
           <div className={`inputFileWrap`}>
             <label htmlFor="file-upload">
               <input type="file" name="file-upload" accept="application/json" onChange={handleImport} />
-              <i className="far fa-arrow-up-from-bracket"></i>
+              <i className="fas fa-arrow-up"></i>
               <span>Choisir un fichier</span>
             </label>
           </div>
@@ -353,7 +353,7 @@ export default function Settings() {
           </p>
           <div className={styles.actionsRow}>
             <button className="cta" onClick={exportJSON} disabled={busy}>
-              <i className="far fa-arrow-down-to-line"></i> Export JSON
+              <i className="fas fa-arrow-down"></i> Export JSON
             </button>
           </div>
         </section>
