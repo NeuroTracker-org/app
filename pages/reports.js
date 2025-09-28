@@ -109,11 +109,17 @@ export default function Reports() {
         drugsDetails: []
     });
 
-    const [range, setRange] = useState({
-        start: "2025-08-25",
-        end: "2025-09-25",
-    });
+    const today = new Date();
+    const end = today.toISOString().slice(0, 10); // format YYYY-MM-DD
 
+    const startDate = new Date();
+    startDate.setDate(today.getDate() - 30);
+    const start = startDate.toISOString().slice(0, 10);
+
+    const [range, setRange] = useState({
+        start,
+        end,
+    });
     const [shareOpen, setShareOpen] = useState(false);
     const [exporting, setExporting] = useState(false);
 
@@ -135,6 +141,7 @@ export default function Reports() {
             end.setHours(23, 59, 59, 999);
 
             const all = await db.records.toArray();
+            console.log("📥 Enregistrements chargés:", all);
             const filtered = all.filter((r) => {
                 const t = new Date(r.startTime).getTime();
                 return t >= start.getTime() && t <= end.getTime();

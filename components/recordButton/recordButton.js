@@ -49,15 +49,15 @@ export default function RecordButton({ openModalRecord }) {
       }
     >
       <ul>
-        <li className={getActiveClass("/records")} onClick={() => navigateTo("/records")}><i className="fal fa-file-alt"></i></li>
-        <li className={getActiveClass("/reports")} onClick={() => navigateTo("/reports")}><i className="fal fa-chart-line"></i></li>
+        <li className={getActiveClass("/records")} onClick={() => navigateTo("/records")}><i className="fas fa-file-alt"></i></li>
+        <li className={getActiveClass("/reports")} onClick={() => navigateTo("/reports")}><i className="fas fa-chart-line"></i></li>
       </ul>
       <button className={`${styles.btnStart} ${context.isRecording ? styles.isRecording : ''}`} onClick={handleClick}>
         <i className={context.isRecording ? 'fas fa-stop' : 'fas fa-bolt'}></i>
       </button>
       <ul>
-        <li className={getActiveClass("/medicine")} onClick={() => navigateTo("/medicine")}><i className="fal fa-capsules"></i></li>
-        <li className={getActiveClass("/settings")} onClick={() => navigateTo("/settings")}><i className="fal fa-cog"></i></li>
+        <li className={getActiveClass("/medicine")} onClick={() => navigateTo("/medicine")}><i className="fas fa-capsules"></i></li>
+        <li className={getActiveClass("/settings")} onClick={() => navigateTo("/settings")}><i className="fas fa-cog"></i></li>
       </ul>
       {/* <span className={styles.btnLabel}>
         {context.isRecording ? 'Stop' : 'Start'}

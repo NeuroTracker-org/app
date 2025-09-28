@@ -51,7 +51,7 @@ export default function InstallPWAButton({ onInstallableChange }) {
   return (
     <>
       <button className={styles.button} onClick={handleInstall}>
-        <i className="fas fa-arrow-down-to-line"></i> Installer l’App
+        <i className="fas fa-arrow-down"></i> Installer l’App
       </button>
 
       {toast && (

@@ -32,44 +32,44 @@ export default function Home() {
           </li>
           <li>
             <Link href="/reports">
-              <i className="far fa-arrow-right"></i>
+              <i className="fas fa-arrow-right"></i>
               Journal de bord pour suivre vos symptômes et identifier les déclencheurs
             </Link>
           </li>
           <li>
             <Link href="/medicine">
-              <i className="far fa-arrow-right"></i>
+              <i className="fas fa-arrow-right"></i>
               Liste des médicaments et traitements que vous utilisez
             </Link>
           </li>
           <li>
             <Link href="/records">
-              <i className="far fa-arrow-right"></i>
+              <i className="fas fa-arrow-right"></i>
               Historique de vos enregistrements en détail
             </Link>
           </li>
           <li>
             <Link href="/settings">
-              <i className="far fa-arrow-right"></i>
+              <i className="fas fa-arrow-right"></i>
               Paramétrage avancé pour synchroniser, gérer ou partager vos données
             </Link>
           </li>
           <li>
             <Link href="/help">
-              <i className="far fa-arrow-right"></i>
+              <i className="fas fa-arrow-right"></i>
               Aide contextuelle pour vous guider dans l’utilisation de l’application
             </Link>
           </li>
           <li>
 
             <Link href="/settings">
-              <i className="far fa-arrow-right"></i>
+              <i className="fas fa-arrow-right"></i>
               Paramétrage avancé pour synchroniser, gérer ou partager vos données
             </Link>
           </li>
           <li>
             <Link href="/help">
-              <i className="far fa-arrow-right"></i>
+              <i className="fas fa-arrow-right"></i>
               Aide contextuelle pour vous guider dans l’utilisation de l’application
             </Link>
           </li>

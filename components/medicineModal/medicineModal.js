@@ -21,7 +21,7 @@ const MedicineModal = ({ isOpen, hide }) => {
                 <div className={styles.modal}>
                     <div className={styles.modalHeader}>
                         <h3>
-                            <i className="far fa-capsules"></i> Mes médicaments
+                            <i className="fas fa-capsules"></i> Mes médicaments
                         </h3>
                         <button type="button" className={styles.closeBtn} onClick={hide}>
                             <i className="fas fa-times"></i>
@@ -51,13 +51,13 @@ const MedicineModal = ({ isOpen, hide }) => {
                                                 onClick={() => setEditingId(drug.id)}
                                                 className={styles.editBtn}
                                             >
-                                                <i className="far fa-pen" />
+                                                <i className="fas fa-pen" />
                                             </button>
                                             <button
                                                 onClick={() => deleteDrug(drug.id)}
                                                 className={styles.deleteBtn}
                                             >
-                                                <i className="far fa-trash-alt" />
+                                                <i className="fas fa-trash-alt" />
                                             </button>
                                         </div>
                                     </li>

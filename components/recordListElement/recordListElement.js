@@ -96,7 +96,7 @@ export default function RecordListElement({ record }) {
         <div className={styles.dateTimes}>
           <h4>Date :</h4>
           <small>{start}</small>
-          <i className={`far fa-arrow-right-long`}></i>
+          <i className={`fas fa-arrow-right-long`}></i>
           <small>{stop}</small>
         </div>
       </section>

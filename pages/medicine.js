@@ -20,7 +20,7 @@ export default function MedicinePage() {
       </Head>
 
       <main className={styles.medicineMain}>
-        <h1><i className="far fa-capsules"></i> Mes médicaments</h1>
+        <h1><i className="fas fa-capsules"></i> Mes médicaments</h1>
         <p className={styles.medicineDescription}>Ajoute, modifie ou supprime tes médicaments.</p>
 
         <div className={styles.medicineSearch}>
