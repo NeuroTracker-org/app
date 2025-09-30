@@ -9,7 +9,7 @@ export default function Document() {
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black" />
         <link rel="apple-touch-icon" href="/icons/icon-192.png" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossOrigin="anonymous" />
+        <link rel="stylesheet" href="https://data.tomazki.com/cdn/fontawesome/css/all.css" crossOrigin="anonymous" />
       </Head>
       <body>
         <Main />
