@@ -658,3 +658,33 @@ body {
     color: #fff !important;
   }
 }
+
+.react-datepicker__time-container .react-datepicker__time {
+  background: transparent !important;
+
+  li:hover {
+    background-color: rgba(255,255,255,0.05) !important;
+  }
+}
+
+.react-datepicker-popper {
+  z-index: 99 !important;
+}
+
+.react-datepicker__input-container input {
+  cursor: pointer !important;
+  width: 100%;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  padding: 8px 12px;
+  border: 1px solid var(--grey);
+  border-radius: 6px;
+  transition: all 0.16s ease-in-out;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}

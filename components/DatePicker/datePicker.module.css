@@ -1,6 +1,5 @@
 .fieldLabel {
   display: block;
-  margin-bottom: 4px;
   font-size: 0.875rem;
   text-transform: uppercase;
   font-weight: 800;
@@ -9,7 +8,6 @@
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
-  cursor: pointer;
   transition: all 0.16s ease-in-out;
   width: 40px;
   text-align: right;

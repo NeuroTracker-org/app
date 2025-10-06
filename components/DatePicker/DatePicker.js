@@ -1,7 +1,17 @@
 import { useState, useRef } from "react";
+
+// LIBS
+import DatePicker, { registerLocale } from "react-datepicker";
+import { fr } from "date-fns/locale"; // import locale de date-fns
+import "react-datepicker/dist/react-datepicker.css"; // styles de base
+
+// STYLES
 import styles from "./datePicker.module.css";
 
-export default function DatePicker({ label, value, onChange }) {
+// Enregistrement de la locale "fr"
+registerLocale("fr", fr);
+
+export default function DatePickerComponent({ label, value, onChange }) {
   const inputRef = useRef(null);
 
   // formater en mode "lundi 14:32"
@@ -18,26 +28,24 @@ export default function DatePicker({ label, value, onChange }) {
   };
 
   return (
-    <div
+    <divz
       className={styles.wrapper}
       onClick={() => inputRef.current?.showPicker?.()}
     >
       <label className={styles.fieldLabel}>{label}</label>
-      <div className={styles.inputContainer}>
-        <i className={`far fa-calendar-alt ${styles.icon}`} />
-        <span className={styles.formattedDate}>
-          {formatDate(value)}
-        </span>
-
-        {/* Input natif caché mais clickable */}
-        <input
-          ref={inputRef}
-          type="datetime-local"
-          value={value}
-          onChange={(e) => onChange(e.target.value)}
-          className={styles.hiddenInput}
-        />
-      </div>
-    </div>
+      <DatePicker
+        ref={inputRef}
+        selected={value ? new Date(value) : null}
+        onChange={(date) => onChange(date?.toISOString().slice(0, 16))}
+        showTimeSelect
+        timeIntervals={15}
+        dateFormat="EEEE dd MMMM HH:mm" // format texte
+        timeFormat="HH:mm"
+        locale="fr" // Locale activée
+        timeCaption="Heure"
+        placeholderText="Choisir une date"
+        className={styles.dateInput}
+      />
+    </divz>
   );
 }

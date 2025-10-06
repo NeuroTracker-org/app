@@ -11,9 +11,10 @@ import DrugInput from "@/components/drugInput/drugInput";
 import FrontZones from "@/components/frontzones/frontzones";
 import BackZones from "@/components/backzones/backzones";
 import MedicineModal from "../medicineModal/medicineModal";
-import DatePicker from "@/components/DatePicker/DatePicker";
+import DatePickerComponent from "@/components/DatePicker/DatePicker";
 import { db } from "@/lib/db";
 
+// STYLES
 import styles from "./recordModal.module.css";
 
 function formatDateLocal(date = new Date()) {
@@ -329,13 +330,13 @@ const RecordModal = ({ isOpen, hide }) => {
                 {/* --- Champ dates --- */}
                 <fieldset className={styles.dateFieldset}>
                   <legend>Quand a eu lieu la crise ?</legend>
-                  <DatePicker
+                  <DatePickerComponent
                     label="Début"
                     value={context.startTime}
                     onChange={context.setStartTime}
                   />
 
-                  <DatePicker
+                  <DatePickerComponent
                     label="Fin"
                     value={stopTime}
                     onChange={setStopTime}
