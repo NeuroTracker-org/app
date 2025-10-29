@@ -60,19 +60,6 @@ export default function Home() {
               Aide contextuelle pour vous guider dans l’utilisation de l’application
             </Link>
           </li>
-          <li>
-
-            <Link href="/settings">
-              <i className="fas fa-arrow-right"></i>
-              Paramétrage avancé pour synchroniser, gérer ou partager vos données
-            </Link>
-          </li>
-          <li>
-            <Link href="/help">
-              <i className="fas fa-arrow-right"></i>
-              Aide contextuelle pour vous guider dans l’utilisation de l’application
-            </Link>
-          </li>
         </ul>
       </main>
 
