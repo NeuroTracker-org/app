@@ -33,3 +33,100 @@
   90% { opacity: 1; }
   100% { opacity: 0; transform: translateY(20px); }
 }
+
+
+
+
+
+
+
+
+/* MODAL */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(16, 19, 25, 0.90);
+  z-index:9999;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.modalContent {
+  position:relative;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider {
+  display:flex;
+  height:100%;
+  max-height: 80dvh;
+  transition:transform .3s ease;
+}
+
+.slide {
+  min-width:100%;
+  height:100%;
+  max-height: 80dvh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:20px;
+}
+
+.slide img {
+  max-width:100%;
+  max-height: 80dvh;
+  object-fit:cover;
+  height:auto;
+  border-radius:12px;
+}
+
+.closeBtn {
+  position:absolute;
+  top:20px;
+  right:20px;
+  background:none;
+  border:none;
+  font-size:16px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  width:36px;
+  height:36px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+}
+
+.nav {
+  position:absolute;
+  bottom:20px;
+  padding: 0 40px;
+  width:100%;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:20px;
+}
+
+.dots {
+  display:flex;
+  gap:6px;
+}
+
+.dot, .activeDot {
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  background:#ccc;
+}
+
+.activeDot {
+  background:#007aff;
+}
