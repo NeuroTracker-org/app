@@ -46,3 +46,6 @@ next-env.d.ts
 
 #shared reports
 shared-reports/*
+
+# temp files
+tmp/
