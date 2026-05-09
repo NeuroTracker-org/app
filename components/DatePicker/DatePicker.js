@@ -36,7 +36,13 @@ export default function DatePickerComponent({ label, value, onChange }) {
       <DatePicker
         ref={inputRef}
         selected={value ? new Date(value) : null}
-        onChange={(date) => onChange(date?.toISOString().slice(0, 16))}
+        onChange={(date) => {
+          if (!date) return onChange("");
+          const pad = (n) => String(n).padStart(2, "0");
+          onChange(
+            `${date.getFullYear()}-${pad(date.getMonth() + 1)}-${pad(date.getDate())}T${pad(date.getHours())}:${pad(date.getMinutes())}`
+          );
+        }}
         showTimeSelect
         timeIntervals={15}
         dateFormat="EEEE dd MMMM HH:mm" // format texte
